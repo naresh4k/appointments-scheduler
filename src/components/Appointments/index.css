@@ -1,0 +1,158 @@
+.app-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to top, #9796f0, #fbc7d4);
+  min-height: 100vh;
+}
+
+.app-container > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  width: 85%;
+  border-radius: 12px;
+  max-width: 550px;
+  padding: 0 55px;
+}
+
+@media screen and (width > 768px) {
+  .app-container > div {
+    width: 78%;
+    max-width: 1120px;
+  }
+}
+
+.add-appointment-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 50px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+@media screen and (width > 768px) {
+  form {
+    width: 45%;
+    max-width: 320px;
+  }
+}
+
+form h1 {
+  color: #171f46;
+  font: 500 22px 'Verdana';
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
+@media screen and (width > 768px) {
+  form h1 {
+    font-size: 32px;
+    margin-bottom: 48px;
+  }
+}
+
+form label {
+  color: #7e858e;
+  font: 500 12px 'Verdana';
+  margin-bottom: 8px;
+}
+
+form input {
+  color: #131415;
+  font: 400 12px 'Verdana';
+  border: 1px solid #7e858e;
+  border-radius: 4px;
+  height: 40px;
+  padding: 8px 0 8px 16px;
+  margin-bottom: 24px;
+  outline: none;
+}
+::-webkit-calendar-picker-indicator {
+  margin-right: 10px;
+  cursor: pointer;
+  box-shadow: 0 0 4px gray;
+  border-radius: 2px;
+  font-size: 20px;
+}
+@media screen and (width > 768px) {
+  form input {
+    font-size: 14px;
+  }
+}
+
+form button {
+  align-self: flex-start;
+  background-color: #8b5cf6;
+  color: #ffffff;
+  font: 500 12px 'Verdana';
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  outline: none;
+  cursor: pointer;
+}
+
+.add-appointment-container img {
+  display: none;
+}
+
+@media screen and (width > 768px) {
+  .add-appointment-container img {
+    display: block;
+    width: 49%;
+  }
+}
+
+hr {
+  border: 1px solid #b5b7c4;
+  width: 100%;
+  margin: 25px 0 32px;
+}
+
+.appointments-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+@media screen and (width > 768px) {
+  .appointments-container {
+    padding: 0 12px;
+  }
+}
+
+.appointments-container h1 {
+  color: #171f46;
+  font: 500 20px 'Verdana';
+  margin: 0;
+}
+
+@media screen and (width > 768px) {
+  .appointments-container h1 {
+    font-size: 26px;
+  }
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0px;
+  margin-top: 24px;
+}
+
+@media screen and (width > 768px) {
+  ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
